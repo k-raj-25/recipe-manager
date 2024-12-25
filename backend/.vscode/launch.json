@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "User Service",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/user-service/run.py",
+            "env": {
+                "FLASK_APP": "run.py",
+                "FLASK_ENV": "development"
+            },
+            "args": ["--host", "0.0.0.0", "--port", "5001"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "python": "${workspaceFolder}/user-service/venv/Scripts/python"
+        },
+        {
+            "name": "Recipe Service",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/recipe-service/run.py",
+            "env": {
+                "FLASK_APP": "run.py",
+                "FLASK_ENV": "development"
+            },
+            "args": ["--host", "0.0.0.0", "--port", "5002"],
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "python": "${workspaceFolder}/recipe-service/venv/Scripts/python"
+        }
+    ]
+}
